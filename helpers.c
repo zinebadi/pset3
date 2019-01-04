@@ -27,7 +27,7 @@ int frequency(string note);
 
 if (note == 3)
 {
-  int octave = atoi(note[3]);
+  int octave = atoi(note[2]);
   if (octave == 3)
       {
         
@@ -44,7 +44,7 @@ if (note == 3)
 
 if (note == 2}
     { 
-      int octave = atoi(note[2]);
+      int octave = atoi(note[1]);
       if (octave == 3)
       {
         
@@ -58,8 +58,9 @@ if (note == 2}
         
       }
      
-      
-      
+      int freq;
+      int freq
+
       
       
       
