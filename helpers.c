@@ -3,5 +3,5 @@
 
 int is_rest(string s)
 {
-
+if (
 }
