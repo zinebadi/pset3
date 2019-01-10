@@ -1,76 +1,27 @@
-#include <stdio.h>
-#include <cs50.h>
-#include <string.h>
 
-bool is_rest(string s)
+// Calculates frequency of a note
+int frequency(string note)
 {
-if (strcmp(s, " "))
-    {
-      return false;
+    int oct;
+    int n = 0;
+    char letter = note[0];    
+    if (strlen(note)==3){
+        oct = atoi(&note[2]);
+        //printf("%c\n",note[1]);
+        char accident = note[1];
+        //printf("%c\n", accident);
+        if (accident=='#'){
+            //printf("found a sharp");
+            n += 1;
+        }else if (accident == 'b'){
+            //printf("found a flat");
+            n -= 1;
+        }
+    }else{
+        oct = atoi(&note[1]);
     }
-else 
-    {
-      return true;
-    }
-}
-//Duration function
-
-int duration(string fraction);
-
-int x = atoi("fraction[0]");
-int y = atoi("fraction[2]");
-int dur = (8/y)*x
-printf("the duraction of this note is %i"), dur);
-
-// frequency function 
-int frequency(string note);
-
-if (note == 3)
-{
-  int octave = atoi(note[2]);
-  if (octave == 3)
-      {
-        
-      }
-  else if (octave == 4)
-      {
-        
-      }
-  else if (octave == 5)
-      {
-        
-      }
-}
-
-if (note == 2}
-    { 
-      int octave = atoi(note[1]);
-      if (octave == 3)
-      {
-        
-      }
-      else if (octave == 4)
-      {
-        
-      }
-      else if (octave == 5)
-      {
-        
-      }
-     
-      int freq;
-      int freq
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+    
+    
+    
+    
+    
